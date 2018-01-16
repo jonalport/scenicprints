@@ -7,6 +7,10 @@ var prints = {
     {
       name: 'Stormy North Bondi jetty',
       file: 'stormy-north-bondi-jetty.jpg'
+    },
+    {
+      name: 'Ben Buckler point',
+      file: 'ben-buckler.jpg'
     }
   ]
 };
