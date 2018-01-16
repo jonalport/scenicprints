@@ -11,6 +11,10 @@ var prints = {
     {
       name: 'Ben Buckler point',
       file: 'ben-buckler.jpg'
+    },
+    {
+      name: 'Stormy Icebergs swimmer',
+      file: 'stormy-icebergs-swimmer.jpg'
     }
   ]
 };
