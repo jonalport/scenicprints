@@ -1,0 +1,203 @@
+/* Large black */
+
+zoom: 0.7;
+height: 900px;
+width: 1116px;
+border-width: 132.0px;
+border-image-source: url(https://d1gtpmyy4dh70u.cloudfront.net/static/img/frames/frame-11501.png);
+border-image-slice: 135;
+border-image-repeat: stretch;
+-webkit-border-image: url(https://d1gtpmyy4dh70u.cloudfront.net/static/img/frames/frame-11501.png) 135 stretch;
+-o-border-image: url(https://d1gtpmyy4dh70u.cloudfront.net/static/img/frames/frame-11501.png) 135 stretch;
+overflow: hidden;
+
+/* Medium black */
+
+zoom: 0.7;
+height: 900px;
+width: 1096px;
+border-width: 162.0px;
+border-image-source: url(https://d1gtpmyy4dh70u.cloudfront.net/static/img/frames/frame-10900.png);
+border-image-slice: 159;
+border-image-repeat: stretch;
+-webkit-border-image: url(https://d1gtpmyy4dh70u.cloudfront.net/static/img/frames/frame-10900.png) 159 stretch;
+-o-border-image: url(https://d1gtpmyy4dh70u.cloudfront.net/static/img/frames/frame-10900.png) 159 stretch;
+overflow: hidden;
+
+/*
+  Where are your frames made?
+  Our frames are handmade locally in the United States.
+  What are your frames made out of?
+  All of our frames are made out of wood. If you have ideas for frames that you’d like to see please let us know by emailing feedback@keepsake.us
+  Will I be able to hang them?
+  Yes, all of our frames come with a hanging wire or a saw tooth hanger.
+  Can I order a standing frame?
+  Yes. In the app under the “Style & Size” menu there is an option for standing frames. On the website all small frames have the option of being standing on checkout.
+  What frame sizes do you offer?
+  In the app the size of each frame is listed when it is selected. Here are the sizes that we offer:
+  Small: 8"x8", 4"x 6", 10"x 10", 5"x 5", 7"x 9", 6"x 6", 5"x 7", 5"x 10"
+  Medium: 10"x 12", 10"x 13", 12"x 12", 13"x 13"
+  Large: 15"x 20", 17"x 21", 20"x 20", 10"x 24", 18"x 24"
+  Will I be able to change the pictures in my frame?
+  Our frames are professionally sealed with paper backing, so we advise against changing the photo yourself.
+  Do you do collages?
+  The Keepsake app does not have collage creation functionality, but if you have a collage saved on your phone you can open it in Keepsake. There are some great free apps you can use to create collages and then save them to your camera roll. One that we recommend is Layout by instagram.
+   PAYMENT
+  What payment options do you offer?
+  We accept all major credit cards and within our iPhone app we also accept Apple Pay.
+  Is shopping with you secure?
+  Yes it is. We use a trusted third party payment processor (https://stripe.com/) that is used by many major retailers.
+   ORDERS
+  How do I change or cancel my order?
+  Please contact us immediately at support@keepsake.us if you need to change or cancel your order.
+  How do I change shipping address?
+  Please contact us immediately at support@keepsake.us if you need to change your shipping address. Once your order has shipped we will be unable to make any changes.
+  There is an unwanted object in my photo, can you photoshop it out for me?
+  We currently don’t offer photo editing, so your finished print will look exactly like the preview that you receive in the order confirmation email.
+  Can you add a label to my print?
+  We don’t currently have an option to add labels. However, if this is a gift you can include a gift note with your frame so the recipient will know who it’s from.
+  Should I use the iPhone app or the website?
+  This is a matter of personal preference. The iPhone app is great for quickly framing your favorite photos direct from you phone. It has other great features such as a complimentary gift card and canvas gallery wraps. The website allows for custom sized frames which is great for non-standard aspect ratios. It also supports higher resolution images from DSLR professional cameras.
+   SHIPPING
+  How much does shipping cost?
+  Shipping is always free.
+  How long do orders generally take?
+  Because each Keepsake item is individually handmade they take a couple of business days to assemble. Orders generally leave our studio within 3-4 business days. Most shipments are sent via USPS 3 day priority, but they can take longer to remote areas. As soon as your order leaves our hands we will send tracking information.
+  Can I track my order?
+  Yes you can. You will receive an email with tracking information as soon as your order leaves our hands.
+  Where do you ship?
+  Currently Keepsake ships to all 50 US states and Australia.
+  Can you expedite my shipment?
+  We have added expedited shipping for some items in the Keepsake iPhone app. To expedite any other orders please contact us and we will do what we can.
+   Order Issues
+  My item is damaged
+  Oh no! We are sorry that you’ve received a damaged item! We inspect each item before shipping, but damages can occur in transit. Please send a picture of the broken item to support@keepsake.us and we will arrange a replacement for you.
+  What is your return policy?
+  Since each Keepsake is individually handmade we can't offer blanket returns for change of mind. We try to print every image as true to the original that we receive. If for any reason you are unhappy with your keepsake please contact support@keepsake.us and we will try to remedy the situation.
+
+  <div class="container">
+  	<div class="row spacer">
+  		<a name="frames"></a>
+  		<h3><img src="https://d1gtpmyy4dh70u.cloudfront.net/static/img/icon-frames.png" width="66px">FRAMES</h3>
+  		<div class="question">Where are your frames made?</div>
+  		<div class="answer">
+
+                	Our frames are handmade locally in the United States.<br>
+
+
+  		</div>
+  		<div class="question">What are your frames made out of?</div>
+  		<div class="answer">
+  		All of our frames are made out of wood. If you have ideas for frames that you’d like to see please let us know by emailing feedback@keepsake.us
+  		</div>
+  		<div class="question">Will I be able to hang them?</div>
+  		<div class="answer">
+  		Yes, all of our frames come with a hanging wire or a saw tooth hanger.
+  		</div>
+  		<div class="question">Can I order a standing frame?</div>
+  		<div class="answer">
+  		Yes. In the app under the “Style &amp; Size” menu there is an option for standing frames. On the website all small frames have the option of being standing on checkout.
+  		</div>
+  		<div class="question">What frame sizes do you offer?</div>
+  		<div class="answer">
+  		In the app the size of each frame is listed when it is selected. Here are the sizes that we offer:
+  		<br>
+  		Small: 8"x8", 4"x 6", 10"x 10", 5"x 5", 7"x 9", 6"x 6", 5"x 7", 5"x 10"<br>
+  		Medium: 10"x 12", 10"x 13", 12"x 12", 13"x 13"<br>
+  		Large: 15"x 20", 17"x 21", 20"x 20", 10"x 24", 18"x 24"
+  		</div>
+  		<div class="question">Will I be able to change the pictures in my frame?</div>
+  		<div class="answer">
+  		Our frames are professionally sealed with paper backing, so we advise against changing the photo yourself.
+  		</div>
+  		<div class="question">Do you do collages?</div>
+  		<div class="answer">
+  		The Keepsake app does not have collage creation functionality, but if you have a collage saved on your phone you can open it in Keepsake. There are some great free apps you can use to create collages and then save them to your camera roll. One that we recommend is <a href="https://itunes.apple.com/us/app/layout-from-instagram/id967351793?mt=8">Layout</a> by instagram.
+  		</div>
+  	</div>
+
+  	<div class="row spacer">
+  		<a name="payment"></a>
+  		<h3><img src="https://d1gtpmyy4dh70u.cloudfront.net/static/img/icon-payment.png" width="66px">PAYMENT</h3>
+
+  		<div class="question">What payment options do you offer?</div>
+  		<div class="answer">
+  		We accept all major credit cards and within our iPhone app we also accept Apple Pay.
+  		</div>
+  		<div class="question">Is shopping with you secure?</div>
+  		<div class="answer">
+  		Yes it is. We use a trusted third party payment processor (https://stripe.com/) that is used by many major retailers.
+  		</div>
+  	</div>
+
+
+  	<div class="row spacer">
+  		<a name="orders"></a>
+  		<h3><img src="https://d1gtpmyy4dh70u.cloudfront.net/static/img/icon-orders.png" width="66px">ORDERS</h3>
+
+  		<div class="question">How do I change or cancel my order?</div>
+  		<div class="answer">
+  		Please contact us immediately at support@keepsake.us if you need to change or cancel your order.
+  		</div>
+  		<div class="question">How do I change shipping address?</div>
+  		<div class="answer">
+  		Please contact us immediately at support@keepsake.us if you need to change your shipping address. Once your order has shipped we will be unable to make any changes.
+  		</div>
+  		<div class="question" <="">There is an unwanted object in my photo, can you photoshop it out for me?</div>
+  		<div class="answer">
+  		We currently don’t offer photo editing, so your finished print will look exactly like the preview that you receive in the order confirmation email.
+  		</div>
+  		<div class="question">Can you add a label to my print?</div>
+  		<div class="answer">
+  		We don’t currently have an option to add labels. However, if this is a gift you can include a gift note with your frame so the recipient will know who it’s from.
+  		</div>
+  		<div class="question">Should I use the iPhone app or the website?</div>
+  		<div class="answer">
+  		This is a matter of personal preference. The iPhone app is great for quickly framing your favorite photos direct from you phone. It has other great features such as a complimentary gift card and canvas gallery wraps. The website allows for custom sized frames which is great for non-standard aspect ratios. It also supports higher resolution images from DSLR professional cameras.
+  		</div>
+  	</div>
+
+  	<div class="row spacer">
+  		<a name="shipping"></a>
+  		<h3><img src="https://d1gtpmyy4dh70u.cloudfront.net/static/img/icon-shipping.png" width="66px">SHIPPING</h3>
+
+  		<div class="question">How much does shipping cost?</div>
+  		<div class="answer">
+  		Shipping is always free.
+  		</div>
+  		<div class="question">How long do orders generally take?</div>
+  		<div class="answer">
+  		Because each Keepsake item is individually handmade they take a couple of business days to assemble. Orders generally leave our studio within 3-4 business days. Most shipments are sent via USPS 3 day priority, but they can take longer to remote areas. As soon as your order leaves our hands we will send tracking information.
+  		</div>
+  		<div class="question">Can I track my order?</div>
+  		<div class="answer">
+  		Yes you can. You will receive an email with tracking information as soon as your order leaves our hands.
+  		</div>
+  		<div class="question">Where do you ship?</div>
+  		<div class="answer">
+  		Currently Keepsake ships to all 50 US states and Australia.
+  		</div>
+  		<div class="question">Can you expedite my shipment?</div>
+  		<div class="answer">
+  		We have added expedited shipping for some items in the Keepsake iPhone app. To expedite any other orders please contact us and we will do what we can.
+  		</div>
+  	</div>
+
+  	<div class="row spacer">
+  		<a name="order-issues"></a>
+  		<h3><img src="https://d1gtpmyy4dh70u.cloudfront.net/static/img/icon-order_issue.png" width="66px">Order Issues</h3>
+
+  		<div class="question">My item is damaged</div>
+  		<div class="answer">
+  		Oh no! We are sorry that you’ve received a damaged item! We inspect each item before shipping, but damages can occur in transit. Please send a picture of the broken item to support@keepsake.us and we will arrange a replacement for you.
+  		</div>
+  		<div class="question">What is your return policy?</div>
+  		<div class="answer">
+  		Since each Keepsake is individually handmade we can't offer blanket returns for change of mind. We try to print every image as true to the original that we receive. If for any reason you are unhappy with your keepsake please contact support@keepsake.us and we will try to remedy the situation.
+  		</div>
+  	</div>
+
+  	<div class="row" style="height:100px">
+  	</div>
+  </div>
+*/
