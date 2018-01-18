@@ -384,25 +384,28 @@ Waypoints
   text-align: center;
 }
 
-.frame-wrapper {
-  /* padding: 20px; */
+.frame {
+  zoom: 0.6;
+  border: 132px solid black;
+  border-width: 132.0px;
+  border-image-slice: 125;
+  border-image-repeat: stretch;
+  box-shadow: 0 0 42px 0px #ccc;
+  overflow: hidden;
 }
 
-.frame {
-  background: yellow url('/img/frame-border.jpg') center center no-repeat;
-  background-size: cover;
-  padding-bottom: 81%;
-  position: relative;
-  margin: 0 auto;
+.black-frame .frame {
+  border-image-source: url("/img/frames/black_frame.png");
+}
+
+.white-frame .frame {
+  border-image-source: url("/img/frames/white_frame.png");
 }
 
 .photo {
-  width: 77%;
+  max-width: 100%;
   height: auto;
-  position: absolute;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  left: 50%;
+  display: block;
 }
 
 .prints h2 {
@@ -424,4 +427,36 @@ Waypoints
 
 input {
   cursor: pointer;
+}
+
+.toggle {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.toggle span {
+  padding: 6px 10px;
+  display: inline-block;
+  margin: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  transition: border 200ms ease-in-out;
+  user-select: none;
+}
+
+.white-frame .j-b:hover,
+.black-frame .j-w:hover {
+  border: 2px solid #eee;
+  cursor: pointer;
+}
+
+.white-frame .j-w {
+  border: 2px solid #aaa;
+}
+
+.black-frame .j-b {
+  border: 2px solid #aaa;
 }

@@ -79,4 +79,16 @@ function render() {
 
 $(function() {
   render();
+
+  $('.toggle').click(function() {
+    var body = $('body');
+
+    if(body.hasClass('white-frame')) {
+      body.removeClass('white-frame');
+      body.addClass('black-frame');
+    } else {
+      body.removeClass('black-frame');
+      body.addClass('white-frame');
+    }
+  });
 });
