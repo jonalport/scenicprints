@@ -119,14 +119,11 @@ $(function() {
     var name = $(this).attr('data-val');
     var first = $(this).children().first();
     var value = first.attr('data-val');
-    first.addClass('selected');
     body.attr('data-' + name, value);
   })
 
   $('.toggle').click(function(event) {
     var name = $(this).attr('data-val');
-    $(this).children().removeClass('selected');
-    $(event.target).addClass('selected');
     var value = $(event.target).attr('data-val');
     body.attr('data-' + name, value);
   });

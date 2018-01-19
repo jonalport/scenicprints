@@ -454,11 +454,17 @@ input {
   user-select: none;
 }
 
-.toggle span:hover:not(.selected) {
+[data-size="large"] .standard-switch:hover,
+[data-size="standard"] .large-switch:hover,
+[data-frame="white"] .black-switch:hover,
+[data-frame="black"] .white-switch:hover {
   border-color: #eee;
   cursor: pointer;
 }
 
-.toggle .selected {
+[data-size="large"] .large-switch,
+[data-size="standard"] .standard-switch,
+[data-frame="white"] .white-switch,
+[data-frame="black"] .black-switch {
   border-color: #999;
 }
