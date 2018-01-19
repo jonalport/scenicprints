@@ -122,9 +122,9 @@ $(function() {
     body.attr('data-' + name, value);
   })
 
-  $('.toggle').click(function(event) {
-    var name = $(this).attr('data-val');
-    var value = $(event.target).attr('data-val');
+  $('.toggle span').click(function(event) {
+    var name = $(this).closest('.toggle').attr('data-val');
+    var value = $(this).attr('data-val');
     body.attr('data-' + name, value);
   });
 });
