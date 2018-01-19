@@ -9,7 +9,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/flexslider.css" rel="stylesheet" >
-    <link href="/css/styles.css?2" rel="stylesheet">
+    <link href="/css/styles.css?5" rel="stylesheet">
     <link href="/css/queries.css" rel="stylesheet">
     <link href="/css/animate.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -19,7 +19,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body id="top" data-gallery="bondi-beach" class="white-frame">
+  <body id="top" data-gallery="bondi-beach">
     <header>
       <nav>
         <div class="row">
@@ -71,17 +71,27 @@
           <div class="frame">
             <img id="photo" class="photo" src="">
           </div>
-          <div class="toggle">
-            <span class="j-w">White frame</span>
-            <span class="j-b">Black frame</span>
-          </div>
         </div>
         <div class="col-md-6 text-center print-info">
           <h2 id="title" class="arrow"></h2>
+          <div class="toggle" data-val="frame">
+            <span class="white-switch" data-val="white">White frame</span>
+            <span class="black-switch" data-val="black">Black frame</span>
+          </div>
+          <div class="toggle" data-val="size">
+            <span class="large-switch" data-val="large">
+              <div class="price">$150</div>
+              57 x 47cm
+            </span>
+            <span class="standard-switch" data-val="standard">
+              <div class="price">$100</div>
+              36 x 29cm
+            </span>
+          </div>
           <div id="paypal-button-container"></div>
         </div>
       </div>
     </script>
-    <script src="/js/gallery.js?4"></script>
+    <script src="/js/gallery.js?5"></script>
   </body>
 </html>

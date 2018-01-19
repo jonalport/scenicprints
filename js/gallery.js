@@ -19,6 +19,40 @@ var prints = {
   ]
 };
 
+function getSize() {
+  return $('body').attr('data-size');
+}
+
+function getFrame() {
+  return $('body').attr('data-frame');
+}
+
+function getDescription() {
+  var description = '';
+
+  if (getFrame() === 'white') {
+    description = 'White frame';
+  } else {
+    description = 'Black frame';
+  }
+
+  if (getSize() === 'standard') {
+    description += ', 36 x 29cm.';
+  } else {
+    description += ', 57 x 47cm.';
+  }
+
+  return description;
+}
+
+function getPrice() {
+  if (getSize() == 'standard') {
+    return '100';
+  } else {
+    return '150';
+  }
+}
+
 function render() {
   var template = $('#template').html();
   var gallery = $('body').data('gallery');
@@ -52,14 +86,14 @@ function render() {
           intent: "sale",
           transactions: [
             {
-              amount: { total: '90', currency: 'AUD' },
+              amount: { total: getPrice(), currency: 'AUD' },
               item_list: {
                 items: [
                   {
                     name: value.name,
-                    description: "Standard size",
+                    description: getDescription(),
                     quantity: "1",
-                    price: "90",
+                    price: getPrice(),
                     currency: "AUD"
                   }
                 ]
@@ -79,16 +113,21 @@ function render() {
 
 $(function() {
   render();
+  var body = $('body');
 
-  $('.toggle').click(function() {
-    var body = $('body');
+  $('.toggle').each(function() {
+    var name = $(this).attr('data-val');
+    var first = $(this).children().first();
+    var value = first.attr('data-val');
+    first.addClass('selected');
+    body.attr('data-' + name, value);
+  })
 
-    if(body.hasClass('white-frame')) {
-      body.removeClass('white-frame');
-      body.addClass('black-frame');
-    } else {
-      body.removeClass('black-frame');
-      body.addClass('white-frame');
-    }
+  $('.toggle').click(function(event) {
+    var name = $(this).attr('data-val');
+    $(this).children().removeClass('selected');
+    $(event.target).addClass('selected');
+    var value = $(event.target).attr('data-val');
+    body.attr('data-' + name, value);
   });
 });
