@@ -16,6 +16,38 @@ var prints = {
       name: 'Stormy Icebergs swimmer',
       file: 'stormy-icebergs-swimmer.jpg'
     }
+  ],
+  sydney: [
+    {
+      name: 'Surfers at Mackenzies Bay',
+      file: 'surfers-mackenzies-bay.jpg'
+    },
+    {
+      name: 'Walkers at Rose Bay dog beach',
+      file: 'walkers-rose-bay-dog-beach.jpg'
+    },
+    {
+      name: 'Bronte to Maroubra',
+      file: 'bronte-maroubra.jpg'
+    },
+    {
+      name: 'Bronte pool',
+      file: 'bronte-pool.jpg'
+    }
+  ],
+  'new-zealand': [
+    {
+      name: 'Kayakers at Roaring Meg',
+      file: 'kayakers-roaring-meg.jpg'
+    },
+    {
+      name: 'Lake Belmore',
+      file: 'lake-belmore.jpg'
+    },
+    {
+      name: 'Shotover jet-boat',
+      file: 'shotover-jet-boat.jpg'
+    }
   ]
 };
 
