@@ -37,6 +37,14 @@ var prints = {
   ],
   'all-over': [
     {
+      name: 'Swimmers, Zakynthos',
+      file: 'swimmers-zakynthos.jpg'
+    },
+    {
+      name: 'Montepulciano',
+      file: 'montepulciano.jpg'
+    },
+    {
       name: 'Kayakers at Roaring Meg',
       file: 'kayakers-roaring-meg.jpg'
     },
@@ -137,8 +145,8 @@ function render() {
       },
       onAuthorize: function(data, actions) {
         return actions.payment.execute().then(function(stuff) {
-          console.log('Done', stuff);
-          $('body').addClass('payment-complete');
+          $('body').prepend('<div class="thanks"><div class="thanks__heading">Thanks, ' + stuff.payer.payer_info.first_name + '!</div><div class="thanks__body">We will be in touch soon with information about your delivery.</div></div>');
+          $('html, body').animate({ scrollTop: 0 }, 0);
         });
       }
     }, '.' + buttonClass);
