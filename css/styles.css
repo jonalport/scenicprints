@@ -374,7 +374,7 @@ Waypoints
 .logo {
   display: block;
   color: #fff;
-  margin: 20px 0;
+  padding: 20px 0;
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -389,7 +389,7 @@ Waypoints
 }
 
 .gallery-nav {
-  margin: 20px 0;
+  margin-top: 20px;
   color: #fff;
 }
 
@@ -404,6 +404,7 @@ Waypoints
   padding: 40px;
   color: #fff;
   text-align: center;
+	margin-bottom: 50px;
 }
 
 .frame {
@@ -436,7 +437,7 @@ Waypoints
 }
 
 .print {
-  margin: 100px 0;
+  margin-bottom: 100px;
 }
 
 .print-info {
@@ -453,7 +454,7 @@ input {
 
 .toggle {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .price {
@@ -497,4 +498,10 @@ header {
 
 .paypal-button-container {
   padding-top: 12px;
+}
+
+.gallery-header {
+	background-color: #242830;
+	padding: 10px 0;
+	text-align: center;
 }

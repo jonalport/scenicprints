@@ -10,6 +10,9 @@
 	.legals { text-align: center; margin: 0; padding: 0; }
 	.made { text-align: center; margin: 0; padding: 0; }
 	.credit { text-align: center; }
+	.print { margin-bottom: 80px; }
+	.gallery-heading { margin-bottom: 20px; }
+	.frame { zoom: 0.35; border-image-slice: 130; }
 }
 /* xGA iPad */
 @media screen and (max-width:1024px) {

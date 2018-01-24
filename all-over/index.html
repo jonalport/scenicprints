@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47128695-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-47128695-5');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,8 +18,8 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/flexslider.css" rel="stylesheet" >
-    <link href="/css/styles.css" rel="stylesheet">
-    <link href="/css/queries.css" rel="stylesheet">
+    <link href="/css/styles.css?234" rel="stylesheet">
+    <link href="/css/queries.css?234" rel="stylesheet">
     <link href="/css/animate.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="/img/favicon.png">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -22,21 +30,15 @@
     <![endif]-->
   </head>
   <body id="top" data-gallery="all-over">
-    <header>
-      <nav>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <a href="/" class="logo">
-              <img src="/img/logo-white-block.png" class="logo-image">Scenic Prints
-            </a>
-            <div class="gallery-nav">
-              <a href="/bondi-beach/">Bondi Beach</a>&middot;
-              <a href="/sydney/">Sydney</a>&middot;
-              <a href="/all-over/">All over</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+    <header class="gallery-header">
+      <a href="/" class="logo">
+        <img src="/img/logo-white-block.png" class="logo-image">Scenic Prints
+      </a>
+      <div class="gallery-nav">
+        <a href="/bondi-beach/">Bondi Beach</a>&middot;
+        <a href="/sydney/">Sydney</a>&middot;
+        <a href="/all-over/">All over</a>
+      </div>
     </header>
     <section class="prints">
       <h1 class="gallery-heading">All over</h1>
@@ -44,13 +46,9 @@
     </section>
     <section class="dark-bg text-center section-padding contact-wrap" id="contact">
       <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="social-buttons">
-              <li><a href="https://instagram.com/scenicprints" class="social-btn"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-          </div>
-        </div>
+        <ul class="social-buttons">
+          <li><a href="https://instagram.com/scenicprints" class="social-btn"><i class="fa fa-instagram"></i></a></li>
+        </ul>
       </div>
     </section>
     <footer>
