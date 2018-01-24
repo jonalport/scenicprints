@@ -212,8 +212,20 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 2
 /* ==========================================================================
 Hero
 ========================================================================== */
-.hero { background: url('/img/hero.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; min-height: 100vh; }
-.hero h1 { font-size: 40px; letter-spacing: 12px; margin: 10px; }
+.hero {
+  background: url('/img/hero.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 65px; height: auto; min-height: 100vh;
+  position: relative;
+}
+.hero__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  /* width: 100%; */
+  left: 0;
+  right: 0;
+}
+.hero h1 { font-size: 40px; letter-spacing: 8px; margin: 20px; }
 .hero h1 span { color: #a1a9b0; display: inline-block; }
 .hero p { letter-spacing: 1px; }
 .learn-more-btn { background: rgba(61, 201, 179, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #309383; -moz-box-shadow: 0px 3px 0px 0px #309383; box-shadow: 0px 3px 0px 0px #309383; margin: 10px; font-weight: bold; }
@@ -222,8 +234,8 @@ Hero
 Intro
 ========================================================================== */
 .intro { background: #f3f5f8; }
-.intro p { margin: 50px 0 0; }
-h1.arrow, h2.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('/img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
+/* .intro p { margin: 50px 0 0; } */
+.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('/img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; margin-bottom: 32px; }
 /* ==========================================================================
 Features
 ========================================================================== */
@@ -254,12 +266,12 @@ Portfolio
 .effects .img:last-child { margin-right: 0; }
 .effects .img img { display: block; margin: 0; padding: 0; height: auto; }
 .overlay { display: block; position: absolute; z-index: 20; background: rgba(100, 194, 158, 0.8); overflow: hidden; transition: all 0.5s; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; }
-a.close-overlay { display: block; position: absolute; top: 0; right: 0; z-index: 100; width: 45px; height: 45px; font-size: 20px; font-weight: 700; color: #fff; line-height: 45px; text-align: center; background-color: #000; cursor: pointer; }
-a.close-overlay.hidden { display: none; }
-a.expand { display: block; position: absolute; z-index: 100; text-align: center; color: #fff; font-weight: 600; font-size: 14px; text-transform: uppercase; line-height: 30px; }
+.close-overlay { display: block; position: absolute; top: 0; right: 0; z-index: 100; width: 45px; height: 45px; font-size: 20px; font-weight: 700; color: #fff; line-height: 45px; text-align: center; background-color: #000; cursor: pointer; }
+.close-overlay.hidden { display: none; }
+.expand { display: block; position: absolute; z-index: 100; text-align: center; color: #fff; font-weight: 600; font-size: 14px; text-transform: uppercase; line-height: 30px; }
 .overlay-effect .img i { font-size: 30px; }
 .overlay-effect .overlay { bottom: 0; left: 0; right: 0; width: 100%; height: 100%; opacity: 0; }
-.overlay-effect .overlay a.expand { left: 0; right: 0; bottom: 47%; margin: 0 auto -30px auto; }
+.overlay-effect .overlay .expand { left: 0; right: 0; bottom: 47%; margin: 0 auto -30px auto; }
 .overlay-effect .img.hover .overlay { height: 100%; opacity: 1; }
 .img img { width: -webkit-calc(100% + 40px) !important; width: calc(100% + 40px) !important; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; -moz-transition: opacity 0.35s, -moz-transform 0.35s; -o-transition: opacity 0.35s, -o-transform 0.35s; -webkit-transform: translate3d(-40px, 0, 0); transform: translate3d(-40px, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }
 .img:hover img { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }
@@ -302,8 +314,8 @@ Contact
 Footer
 ========================================================================== */
 footer a { color: #a1a9b0; }
-footer { background-color: #242830; padding: 40px 0 30px; }
-footer p { color: #fff; }
+footer { background-color: #242830; padding: 40px 0 30px; text-transform: uppercase; letter-spacing: 1px; }
+footer p { color: #999; font-size: 12px; }
 ul.legals { list-style: none; color: #fff; line-height: 25px; }
 ul.legals li { display: inline-block; }
 ul.legals li::after { content: " |"; }
@@ -329,6 +341,13 @@ Waypoints
   color: #000;
 }
 
+.tagline__inner {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  display: inline-block;
+  padding: 0 12px;
+}
+
 .made {
   vertical-align: middle;
 }
@@ -347,6 +366,9 @@ Waypoints
 
 .section-heading {
   margin: 0 0 4rem 0;
+  font-size: 32px;
+  text-transform: none;
+  font-weight: normal;
 }
 
 .logo {
@@ -411,7 +433,6 @@ Waypoints
 
 .prints h2 {
   text-align: center;
-  margin: 0 0 50px 0;
 }
 
 .print {
@@ -468,4 +489,12 @@ input {
 [data-frame="white"] .white-switch,
 [data-frame="black"] .black-switch {
   border-color: #999;
+}
+
+header {
+  position: relative;
+}
+
+.paypal-button-container {
+  padding-top: 12px;
 }

@@ -35,7 +35,7 @@ var prints = {
       file: 'bronte-pool.jpg'
     }
   ],
-  'new-zealand': [
+  'all-over': [
     {
       name: 'Kayakers at Roaring Meg',
       file: 'kayakers-roaring-meg.jpg'
@@ -91,12 +91,13 @@ function render() {
 
   $.each(prints[gallery], function(index, value) {
     var item = $(template).clone();
-    var buttonClass = 'paypal-button-container-' + index;
+    var baseClass = 'paypal-button-container';
+    var buttonClass = baseClass + '-' + index;
 
     $(item).find('#title').html(value.name);
     $(item).find('#photo').attr('src', '/img/categories/' + gallery + '/' + value.file);
     $(item).attr('data-name', value.name);
-    $(item).find('#paypal-button-container').attr('class', buttonClass);
+    $(item).find('#paypal-button-container').addClass(baseClass).addClass(buttonClass).removeAttr('id');
     $('#target').append(item);
 
     window.paypal.Button.render({
@@ -136,7 +137,8 @@ function render() {
       },
       onAuthorize: function(data, actions) {
         return actions.payment.execute().then(function(stuff) {
-          console.log('DONE', stuff);
+          console.log('Done', stuff);
+          $('body').addClass('payment-complete');
         });
       }
     }, '.' + buttonClass);
@@ -146,6 +148,14 @@ function render() {
 $(function() {
   render();
   var body = $('body');
+
+  $.preloadImages = function() {
+    for (var i = 0; i < arguments.length; i++) {
+      $('<img />').attr('src', arguments[i]);
+    }
+  }
+
+  $.preloadImages('/img/frames/black_frame.png','/img/frames/white_frame.png');
 
   $('.toggle').each(function() {
     var name = $(this).attr('data-val');
