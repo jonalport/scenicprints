@@ -1,16 +1,20 @@
 var prints = {
   'bondi-beach': [
     {
+      name: 'Tiny Bondi people',
+      file: 'tiny-bondi-people.jpg'
+    },
+    {
+      name: 'Ben Buckler point',
+      file: 'ben-buckler.jpg'
+    },
+    {
       name: 'Lifeguard boat at North Bondi',
       file: 'bondi-lifeguard-boat.jpg'
     },
     {
       name: 'Stormy North Bondi jetty',
       file: 'stormy-north-bondi-jetty.jpg'
-    },
-    {
-      name: 'Ben Buckler point',
-      file: 'ben-buckler.jpg'
     },
     {
       name: 'Stormy Icebergs swimmer',
@@ -55,6 +59,10 @@ var prints = {
     {
       name: 'Shotover jet-boat',
       file: 'shotover-jet-boat.jpg'
+    },
+    {
+      name: 'Avignonesi wine farm',
+      file: 'avignonesi-wine-farm.jpg'
     }
   ]
 };

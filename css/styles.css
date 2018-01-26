@@ -215,7 +215,7 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 2
 Hero
 ========================================================================== */
 .hero {
-  background: url('/img/hero.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 65px; height: auto; min-height: 100vh;
+  background: url('/img/categories/bondi-beach/tiny-bondi-people.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 65px; height: auto; min-height: 100vh;
   position: relative;
 }
 .hero__content {
@@ -227,10 +227,21 @@ Hero
   left: 0;
   right: 0;
 }
-.hero h1 { font-size: 40px; letter-spacing: 8px; margin: 20px; }
+.banner-wrapper {
+  padding: 0 20px;
+  margin: 0;
+}
+.banner-image {
+  max-width: 100%;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  /* opacity: 0.75; */
+}
+/* .hero h1 { font-size: 40px; letter-spacing: 8px; margin: 20px; } */
 .hero h1 span { color: #a1a9b0; display: inline-block; }
 .hero p { letter-spacing: 1px; }
-.learn-more-btn { background: rgba(61, 201, 179, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #309383; -moz-box-shadow: 0px 3px 0px 0px #309383; box-shadow: 0px 3px 0px 0px #309383; margin: 10px; font-weight: bold; }
+.learn-more-btn { background: rgba(61, 201, 179, 1); padding: 16px 32px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #309383; -moz-box-shadow: 0px 3px 0px 0px #309383; box-shadow: 0px 3px 0px 0px #309383; margin: 10px; font-weight: bold; }
 .learn-more-btn:hover, .learn-more-btn:focus { background: rgba(61, 201, 179, 0.6); color: #fff; }
 /* ==========================================================================
 Intro
@@ -347,7 +358,9 @@ Waypoints
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   display: inline-block;
-  padding: 0 12px;
+  padding: 4px 16px;
+  font-weight: bold;
+  color: #555;
 }
 
 .made {
