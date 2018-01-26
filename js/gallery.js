@@ -17,8 +17,8 @@ var prints = {
       file: 'stormy-north-bondi-jetty.jpg'
     },
     {
-      name: 'Stormy Icebergs swimmer',
-      file: 'stormy-icebergs-swimmer.jpg'
+      name: 'Lonely Icebergs swimmer',
+      file: 'lonely-icebergs-swimmer.jpg'
     }
   ],
   sydney: [
