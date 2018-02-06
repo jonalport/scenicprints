@@ -215,7 +215,7 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 2
 Hero
 ========================================================================== */
 .hero {
-  background: url('/img/categories/bondi-beach/tiny-bondi-people.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 65px; height: auto; min-height: 100vh;
+  background: url('/img/categories/bondi-beach/diagonal-dippers.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 65px; height: auto; min-height: 100vh;
   position: relative;
 }
 .hero__content {

@@ -1,6 +1,14 @@
 var prints = {
   'bondi-beach': [
     {
+      name: 'Diagonal dippers',
+      file: 'diagonal-dippers.jpg'
+    },
+    {
+      name: 'Coming & going',
+      file: 'vertical-swimmers-bondi.jpg'
+    },
+    {
       name: 'Tiny Bondi people',
       file: 'tiny-bondi-people.jpg'
     },
