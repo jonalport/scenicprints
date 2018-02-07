@@ -5,12 +5,20 @@ var prints = {
       file: 'diagonal-dippers.jpg'
     },
     {
+      name: 'Azure dips',
+      file: 'azure-dips.jpg'
+    },
+    {
       name: 'Coming & going',
       file: 'vertical-swimmers-bondi.jpg'
     },
     {
       name: 'Tiny Bondi people',
       file: 'tiny-bondi-people.jpg'
+    },
+    {
+      name: 'Tidal pools',
+      file: 'tidal-pools.jpg'
     },
     {
       name: 'Ben Buckler point',
@@ -61,8 +69,8 @@ var prints = {
       file: 'kayakers-roaring-meg.jpg'
     },
     {
-      name: 'Lake Belmore',
-      file: 'lake-belmore.jpg'
+      name: 'Lake Benmore',
+      file: 'lake-benmore.jpg'
     },
     {
       name: 'Shotover jet-boat',
