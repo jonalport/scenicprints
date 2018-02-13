@@ -83,6 +83,14 @@ var prints = {
   ]
 };
 
+window.onload = function() {
+  if (window.location.hash) {
+    $('html, body').animate({
+      scrollTop: $(window.location.hash).offset().top
+    }, 800);
+  }
+}
+
 function getSize() {
   return $('body').attr('data-size');
 }
@@ -129,6 +137,7 @@ function render() {
     $(item).find('#title').html(value.name);
     $(item).find('#photo').attr('src', '/img/categories/' + gallery + '/' + value.file);
     $(item).attr('data-name', value.name);
+    $(item).attr('id', value.file.split('.')[0]);
     $(item).find('#paypal-button-container').addClass(baseClass).addClass(buttonClass).removeAttr('id');
     $('#target').append(item);
 
@@ -148,7 +157,7 @@ function render() {
       },
       payment: function(data, actions) {
         return actions.payment.create({
-          intent: "sale",
+          intent: 'sale',
           transactions: [
             {
               amount: { total: getPrice(), currency: 'AUD' },
@@ -157,9 +166,9 @@ function render() {
                   {
                     name: value.name,
                     description: getDescription(),
-                    quantity: "1",
+                    quantity: '1',
                     price: getPrice(),
-                    currency: "AUD"
+                    currency: 'AUD'
                   }
                 ]
               }
@@ -187,7 +196,7 @@ $(function() {
     }
   }
 
-  $.preloadImages('/img/frames/black_frame.png','/img/frames/white_frame.png');
+  $.preloadImages('/img/frames/black_frame.png', '/img/frames/white_frame.png');
 
   $('.toggle').each(function() {
     var name = $(this).attr('data-val');
