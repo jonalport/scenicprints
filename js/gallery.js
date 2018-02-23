@@ -39,6 +39,10 @@ var prints = {
   ],
   sydney: [
     {
+      name: 'North Tamarama',
+      file: 'north-tama.jpg'
+    },
+    {
       name: 'Surfers at Mackenzies Bay',
       file: 'surfers-mackenzies-bay.jpg'
     },
