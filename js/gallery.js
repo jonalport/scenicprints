@@ -43,6 +43,10 @@ var prints = {
       file: 'north-tama.jpg'
     },
     {
+      name: 'Mona Vale pool',
+      file: 'mona-vale-pool.jpg'
+    },
+    {
       name: 'Surfers at Mackenzies Bay',
       file: 'surfers-mackenzies-bay.jpg'
     },
