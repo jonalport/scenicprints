@@ -449,6 +449,16 @@ Waypoints
 
 .prints h2 {
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.byline {
+  margin-bottom: 32px;
+  color: #999;
+}
+
+.byline a {
+  color: #3dc9b3;
 }
 
 .print {

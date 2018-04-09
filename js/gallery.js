@@ -1,90 +1,174 @@
 var prints = {
   'bondi-beach': [
     {
+      artist: 'Isabella Dobozy',
+      url: 'https://www.isabelladobozyphoto.com/',
+      name: 'Bondi board training',
+      file: 'bondi-board-training.jpg'
+    },
+    {
+      artist: 'Isabella Dobozy',
+      url: 'https://www.isabelladobozyphoto.com/',
+      name: 'Bergs morning',
+      file: 'bergs-morning.jpg'
+    },
+    {
+      artist: 'Isabella Dobozy',
+      url: 'https://www.isabelladobozyphoto.com/',
+      name: 'One wave is all it takes',
+      file: 'one-wave-is-all-it-takes.jpg'
+    },
+    {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Diagonal dippers',
       file: 'diagonal-dippers.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Azure dips',
       file: 'azure-dips.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Coming & going',
       file: 'vertical-swimmers-bondi.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Tiny Bondi people',
       file: 'tiny-bondi-people.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Tidal pools',
       file: 'tidal-pools.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Ben Buckler point',
       file: 'ben-buckler.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Lifeguard boat at North Bondi',
       file: 'bondi-lifeguard-boat.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Stormy North Bondi jetty',
       file: 'stormy-north-bondi-jetty.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Lonely Icebergs swimmer',
       file: 'lonely-icebergs-swimmer.jpg'
     }
   ],
   sydney: [
     {
+      artist: 'Isabella Dobozy',
+      url: 'https://www.isabelladobozyphoto.com/',
+      name: 'Summer at the Bogey Hole',
+      file: 'summer-at-the-bogey-hole.jpg'
+    },
+    {
+      artist: 'Isabella Dobozy',
+      url: 'https://www.isabelladobozyphoto.com/',
+      name: 'DaFin',
+      file: 'dafin.jpg'
+    },
+    {
+      artist: 'Isabella Dobozy',
+      url: 'https://www.isabelladobozyphoto.com/',
+      name: 'Asymmetrical Clovelly',
+      file: 'asymmetrical-clovelly.jpg'
+    },
+    {
+      artist: 'Jon Alport',
+      url: '',
       name: 'North Tamarama',
       file: 'north-tama.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Mona Vale pool',
       file: 'mona-vale-pool.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Surfers at Mackenzies Bay',
       file: 'surfers-mackenzies-bay.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Walkers at Rose Bay dog beach',
       file: 'walkers-rose-bay-dog-beach.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Bronte to Maroubra',
       file: 'bronte-maroubra.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Bronte pool',
       file: 'bronte-pool.jpg'
     }
   ],
   'all-over': [
     {
+      artist: 'Isabella Dobozy',
+      url: 'https://www.isabelladobozyphoto.com/',
+      name: 'Cookies & cream',
+      file: 'cookies-and-cream.jpg'
+    },
+    {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Swimmers, Zakynthos',
       file: 'swimmers-zakynthos.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Montepulciano',
       file: 'montepulciano.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Kayakers at Roaring Meg',
       file: 'kayakers-roaring-meg.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Lake Benmore',
       file: 'lake-benmore.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Shotover jet-boat',
       file: 'shotover-jet-boat.jpg'
     },
     {
+      artist: 'Jon Alport',
+      url: '',
       name: 'Avignonesi wine farm',
       file: 'avignonesi-wine-farm.jpg'
     }
@@ -143,6 +227,14 @@ function render() {
     var buttonClass = baseClass + '-' + index;
 
     $(item).find('#title').html(value.name);
+
+    var subtitle = value.artist;
+
+    if (value.url) {
+      subtitle = "<a title=\"Visit " + value.artist + "'s website\" href=\"" + value.url + "\">" + value.artist + "</a>";
+    }
+
+    $(item).find('#subtitle').html('By ' + subtitle);
     $(item).find('#photo').attr('src', '/img/categories/' + gallery + '/' + value.file);
     $(item).attr('data-name', value.name);
     $(item).attr('id', value.file.split('.')[0]);
@@ -172,6 +264,8 @@ function render() {
               item_list: {
                 items: [
                   {
+                    artist: 'Jon Alport',
+                    url: '',
                     name: value.name,
                     description: getDescription(),
                     quantity: '1',
