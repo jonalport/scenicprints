@@ -3,6 +3,12 @@ var prints = {
     {
       artist: 'Isabella Dobozy',
       url: 'https://www.isabelladobozyphoto.com/',
+      name: 'Road to Aussies',
+      file: 'road-to-aussies.jpg'
+    },
+    {
+      artist: 'Isabella Dobozy',
+      url: 'https://www.isabelladobozyphoto.com/',
       name: 'Bondi board training',
       file: 'bondi-board-training.jpg'
     },
