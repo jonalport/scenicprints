@@ -264,8 +264,6 @@ function render() {
               item_list: {
                 items: [
                   {
-                    artist: 'Jon Alport',
-                    url: '',
                     name: value.name,
                     description: getDescription(),
                     quantity: '1',
